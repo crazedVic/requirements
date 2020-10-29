@@ -71,13 +71,15 @@ POST Twilio Request:
 https://beta.preterra.com/api/twilio/request
 
 Body:
+```
 {
     "phone_number": "+1555555555",
     "method": "sms_test",
     "app": "Trace"
 }
-
+```
 Response:
+```
 {
     "status": "success",
     "message": "test call / sms sent",
@@ -85,21 +87,148 @@ Response:
         "status": "pending"
     }
 }
-
+```
 POST Twilio Verify Request:
 
 https://beta.preterra.com/api/twilio/verify
 
 Body:
+```
 {
     "pin": "999999",
     "phone_number": "+1555555555",
     "app": "Trace"
 }
-
+```
 Response:
+```
 {
     "status": "success",
     "message": "pin sent for verification",
     "data": true
 }
+```
+POST submit survey:
+https://beta.preterra.com/api/afar/results
+
+Body:
+```
+{
+  "id": 39,
+  "type": "Staff",
+  "full_name": "Victor Rubba",
+  "first": "Victor",
+  "last": "Rubba",
+  "child": "Sandray",
+  "email": "ed@ed.com",
+  "phone": "+1 (412) 341-2341",
+  "appointment_date": "",
+  "time": "14:06:22",
+  "no": [
+    "Do you have a fever greater than 38°C / 100.4°F ?",
+    "Are you experiencing a new onset of (or exacerbation of chronic) cough?",
+    "Do you have shortness of breath?",
+    "Are you having difficulty breathing?",
+    "Do you have a sore throat?",
+    "Do you have a runny nose?",
+    "Have you returned home from outside the country in the past 14 days?",
+    "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had travelled outside the country in the 14 days before the illness started, while:\n  \t1) not wearing recommended PPE at work and/or  \t\n2) not practicing social distancing as appropriate to the setting?",
+    "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had close contact with a lab-confirmed COVID-19 case, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing as appropriate to the setting?",
+    "Have you had **close contact** (within 2 meters/6 feet) with a confirmed or probable case of COVID-19, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing?",
+    "Do you have a fever greater than 38°C / 100.4°F ?",
+    "Are you experiencing a new onset of (or exacerbation of chronic) cough?",
+    "Do you have shortness of breath?",
+    "Are you having difficulty breathing?",
+    "Do you have a sore throat?",
+    "Do you have a runny nose?",
+    "Have you returned home from outside the country in the past 14 days?",
+    "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had travelled outside the country in the 14 days before the illness started, while:\n  \t1) not wearing recommended PPE at work and/or  \t\n2) not practicing social distancing as appropriate to the setting?",
+    "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had close contact with a lab-confirmed COVID-19 case, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing as appropriate to the setting?",
+    "Have you had **close contact** (within 2 meters/6 feet) with a confirmed or probable case of COVID-19, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing?",
+    "Do you have a fever greater than 38°C / 100.4°F ?",
+    "Are you experiencing a new onset of (or exacerbation of chronic) cough?",
+    "Do you have shortness of breath?",
+    "Are you having difficulty breathing?",
+    "Do you have a sore throat?",
+    "Do you have a runny nose?",
+    "Have you returned home from outside the country in the past 14 days?",
+    "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had travelled outside the country in the 14 days before the illness started, while:\n  \t1) not wearing recommended PPE at work and/or  \t\n2) not practicing social distancing as appropriate to the setting?",
+    "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had close contact with a lab-confirmed COVID-19 case, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing as appropriate to the setting?",
+    "Have you had **close contact** (within 2 meters/6 feet) with a confirmed or probable case of COVID-19, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing?",
+    "Do you have a fever greater than 38°C / 100.4°F ?",
+    "Are you experiencing a new onset of (or exacerbation of chronic) cough?",
+    "Do you have shortness of breath?",
+    "Are you having difficulty breathing?",
+    "Do you have a sore throat?",
+    "Do you have a runny nose?",
+    "Have you returned home from outside the country in the past 14 days?",
+    "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had travelled outside the country in the 14 days before the illness started, while:\n  \t1) not wearing recommended PPE at work and/or  \t\n2) not practicing social distancing as appropriate to the setting?",
+    "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had close contact with a lab-confirmed COVID-19 case, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing as appropriate to the setting?",
+    "Have you had **close contact** (within 2 meters/6 feet) with a confirmed or probable case of COVID-19, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing?"
+  ],
+  "yes": []
+}
+```
+
+Response:
+```
+{
+    "status": "success",
+    "message": "Submission emailed successfully",
+    "data": {
+        "id": 39,
+        "type": "Staff",
+        "full_name": "Victor Rubba",
+        "first": "Victor",
+        "last": "Rubba",
+        "child": "Sandray",
+        "email": "ed@ed.com",
+        "phone": "+1 (412) 341-2341",
+        "appointment_date": "",
+        "time": "14:06:22",
+        "no": [
+            "Do you have a fever greater than 38°C / 100.4°F ?",
+            "Are you experiencing a new onset of (or exacerbation of chronic) cough?",
+            "Do you have shortness of breath?",
+            "Are you having difficulty breathing?",
+            "Do you have a sore throat?",
+            "Do you have a runny nose?",
+            "Have you returned home from outside the country in the past 14 days?",
+            "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had travelled outside the country in the 14 days before the illness started, while:\n  \t1) not wearing recommended PPE at work and/or  \t\n2) not practicing social distancing as appropriate to the setting?",
+            "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had close contact with a lab-confirmed COVID-19 case, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing as appropriate to the setting?",
+            "Have you had **close contact** (within 2 meters/6 feet) with a confirmed or probable case of COVID-19, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing?",
+            "Do you have a fever greater than 38°C / 100.4°F ?",
+            "Are you experiencing a new onset of (or exacerbation of chronic) cough?",
+            "Do you have shortness of breath?",
+            "Are you having difficulty breathing?",
+            "Do you have a sore throat?",
+            "Do you have a runny nose?",
+            "Have you returned home from outside the country in the past 14 days?",
+            "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had travelled outside the country in the 14 days before the illness started, while:\n  \t1) not wearing recommended PPE at work and/or  \t\n2) not practicing social distancing as appropriate to the setting?",
+            "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had close contact with a lab-confirmed COVID-19 case, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing as appropriate to the setting?",
+            "Have you had **close contact** (within 2 meters/6 feet) with a confirmed or probable case of COVID-19, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing?",
+            "Do you have a fever greater than 38°C / 100.4°F ?",
+            "Are you experiencing a new onset of (or exacerbation of chronic) cough?",
+            "Do you have shortness of breath?",
+            "Are you having difficulty breathing?",
+            "Do you have a sore throat?",
+            "Do you have a runny nose?",
+            "Have you returned home from outside the country in the past 14 days?",
+            "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had travelled outside the country in the 14 days before the illness started, while:\n  \t1) not wearing recommended PPE at work and/or  \t\n2) not practicing social distancing as appropriate to the setting?",
+            "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had close contact with a lab-confirmed COVID-19 case, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing as appropriate to the setting?",
+            "Have you had **close contact** (within 2 meters/6 feet) with a confirmed or probable case of COVID-19, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing?",
+            "Do you have a fever greater than 38°C / 100.4°F ?",
+            "Are you experiencing a new onset of (or exacerbation of chronic) cough?",
+            "Do you have shortness of breath?",
+            "Are you having difficulty breathing?",
+            "Do you have a sore throat?",
+            "Do you have a runny nose?",
+            "Have you returned home from outside the country in the past 14 days?",
+            "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had travelled outside the country in the 14 days before the illness started, while:\n  \t1) not wearing recommended PPE at work and/or  \t\n2) not practicing social distancing as appropriate to the setting?",
+            "Do you live with or have had **close contact** (within 2 meters/6 feet) with a person with an influenza-like illness (ILI) who had close contact with a lab-confirmed COVID-19 case, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing as appropriate to the setting?",
+            "Have you had **close contact** (within 2 meters/6 feet) with a confirmed or probable case of COVID-19, while: \n \n1) not wearing recommended PPE and/or \n \n2) not practicing social distancing?"
+        ],
+        "yes": []
+    }
+}
+```
