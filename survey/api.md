@@ -66,6 +66,12 @@ Response:
 }
 ```
 
+Notes on Config:
+*  "theme_color": "0xFF2366CC" is used for app bar, buttons, etc, but not yes and no buttons.
+* report_fields is for server use and can be ignored.
+
+
+
 POST Twilio Request:
 
 https://beta.preterra.com/api/twilio/request
