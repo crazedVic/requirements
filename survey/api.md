@@ -66,3 +66,40 @@ Response:
 }
 ```
 
+POST Twilio Request:
+
+https://beta.preterra.com/api/twilio/request
+
+Body:
+{
+    "phone_number": "+1555555555",
+    "method": "sms_test",
+    "app": "Trace"
+}
+
+Response:
+{
+    "status": "success",
+    "message": "test call / sms sent",
+    "data": {
+        "status": "pending"
+    }
+}
+
+POST Twilio Verify Request:
+
+https://beta.preterra.com/api/twilio/verify
+
+Body:
+{
+    "pin": "999999",
+    "phone_number": "+1555555555",
+    "app": "Trace"
+}
+
+Response:
+{
+    "status": "success",
+    "message": "pin sent for verification",
+    "data": true
+}
